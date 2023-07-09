@@ -5,9 +5,8 @@
 
 int main()
 {
-    int ip[4], masque, nbrReseaux, Prefixe;
+    int ip[4], masque, nbrReseaux, Prefixe, tmp, j, i, sousReseau[30];
     int pas; // c'est le pas pour determiner les @reseaux
-    int tmp, j, i;
     affichage();
     printf("Donner une addresse ip: ");
     scanf("%d.%d.%d.%d", &ip[0], &ip[1], &ip[2], &ip[3]);
@@ -16,7 +15,6 @@ debut:
     scanf("%d", &masque);
     printf("Donner le nombre des reseaux Lans && Wans: ");
     scanf("%d", &nbrReseaux);
-    int sousReseau[nbrReseaux];
     printf("saisi la taille de chaque reseau: \n");
     for (i = 0; i < nbrReseaux; i++)
     { // recuperation de l'adresse ip à partir de l'utilisateur
