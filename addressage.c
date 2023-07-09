@@ -29,9 +29,9 @@ debut:
         {
             j = getPrefixe(sousReseau[i]);
             Prefixe = 32 - j;
-            printf("size: %d =>\t %d.%d.%d.%d \t\t", sousReseau[i], ip[0], ip[1], ip[2], ip[3]);
+            printf("size: %d =>\t\033[1;37m %d.%d.%d.%d\033[0m \t", sousReseau[i], ip[0], ip[1], ip[2], ip[3]);
             brodcast(ip, Prefixe);
-            printf("\t\t");
+            printf("\t");
             netMask(Prefixe);
             printf(" /%d\n", Prefixe);
             if (Prefixe >= 2 && Prefixe <= 8)
