@@ -1,2 +1,1 @@
-# Adressage 
-this simple programme allows to Network enginer to subdivide network address to subnets using vlsm techn 
+programme pour automatiser l'adressage vlsm ipv4 #reseau #cisco 
