@@ -6,8 +6,7 @@
 // cette fonction permet d'obtenir l'adresse masque de sous-reseau à partir d'un prefixe donné
 void netMask(int prefixe)
 {
-    int i;
-    int s = 0;
+    int i, s = 0;
     if (prefixe > 2 && prefixe <= 8)
     { // le cas de premier octet
         for (i = 7; i >= 0; i--)
@@ -56,9 +55,8 @@ void netMask(int prefixe)
 // la fonction brodcast permet d'obtenir l'adresse de diffusion
 void brodcast(int ipAdd[], int prefixe)
 {
-    int i, index;
-    int s = 0;
-    int temp;
+    int i, index, s = 0, temp;
+
     if (prefixe >= 2 && prefixe <= 8)
     {
         index = 8 - prefixe;
@@ -149,7 +147,6 @@ void trierTableau(int table[], int size)
 int getPrefixe(int taille)
 {
     int j = 0;
-    
     do
     {
         if (taille <= pow(2, j))
@@ -163,9 +160,9 @@ int getPrefixe(int taille)
 
 void affichage()
 {
-    printf("\n######################################################\n\n");
-    printf("############ PROGRAMME D'ADDRESSAGE TCP/IPV4 #########\n");
-    printf("\n######################################################\n\n");
+    printf("\n\033[1;34m****************************************\033[0m\n\n");
+    printf("----\033[1;31m PROGRAMME D'ADDRESSAGE TCP/IPV4\033[0m----\n");
+    printf("\n\033[1;34m****************************************\033[0m\n\n");
 }
 
 #endif
