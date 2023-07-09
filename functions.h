@@ -149,7 +149,7 @@ void trierTableau(int table[], int size)
 int getPrefixe(int taille)
 {
     int j = 0;
-    j = 0;
+    
     do
     {
         if (taille <= pow(2, j))
